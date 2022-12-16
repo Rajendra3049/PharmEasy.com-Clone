@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 import {
   Box,
@@ -18,13 +18,17 @@ import {
   Stack,
   Image,
 } from "@chakra-ui/react";
+// import icon
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
 import { CiMobile2, CiDiscount1 } from "react-icons/ci";
 import { BsPerson, BsCart2 } from "react-icons/bs";
 
-import DrawerExample from "./drawer";
-import LoginDrawer from "./LoginDrawer";
+// import components
+import DrawerExample from "../Components/drawer";
+import LoginDrawer from "../Components/LoginDrawer";
 import NavStyle from "../Styles/Navstyle.module.css";
+import LogOutMenu from "../Components/LogOutMenu";
+import { AuthContext } from "../Context/AuthContext";
 
 const Links = ["Download App", "Hello,Login", "Offers", "Cart"];
 
@@ -42,8 +46,9 @@ const NavLink = ({ children }) => (
 );
 
 export default function NavigationBar() {
+  const [phoneNo, setPhoneNo] = React.useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const { auth, setAuth, Login, Logout } = React.useContext(AuthContext);
   return (
     <>
       <Box bg={useColorModeValue("white.100", "white.900")} px={4}>
@@ -70,6 +75,7 @@ export default function NavigationBar() {
                 />{" "}
               </Box>
               <Box style={{ marginTop: "10px" }}>
+                {/* pin code drawer */}
                 <DrawerExample />
               </Box>
             </Box>
@@ -88,11 +94,14 @@ export default function NavigationBar() {
               </NavLink>
               <NavLink>
                 <Box className={NavStyle.navApp}>
-                  <BsPerson size={"50px"} />
                   <Box className={NavStyle.login}>
                     {" "}
                     {/* login drawer */}
-                    <LoginDrawer />
+                    {auth ? (
+                      <LogOutMenu phoneNo={phoneNo} />
+                    ) : (
+                      <LoginDrawer phoneNo={phoneNo} setPhoneNo={setPhoneNo} />
+                    )}
                   </Box>
                 </Box>
               </NavLink>

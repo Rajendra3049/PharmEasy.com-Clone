@@ -50,7 +50,8 @@ export default function DrawerExample() {
         isOpen={isOpen}
         placement="right"
         initialFocusRef={firstField}
-        onClose={onClose}>
+        onClose={onClose}
+        size="md">
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
@@ -93,7 +94,6 @@ export default function DrawerExample() {
                     textAlign: "center",
                     alignItems: "center",
                     backgroundColor: "#eef4ff",
-                    width: "280px",
                     padding: "10px",
                   }}>
                   <GiScooter size="30px" color="green" />
@@ -111,12 +111,11 @@ export default function DrawerExample() {
                     textAlign: "center",
                     alignItems: "center",
                     backgroundColor: "#cef8ff",
-                    width: "280px",
                     padding: "10px",
                     marginTop: "50px",
                   }}>
                   <RiPinDistanceLine size="30px" color="green" />
-                  <Box style={{ border: "0px solid red", width: "80%" }}>
+                  <Box style={{ border: "0px solid red" }}>
                     Over 30,00,000 orders safely delivered Know more
                   </Box>
                 </Box>

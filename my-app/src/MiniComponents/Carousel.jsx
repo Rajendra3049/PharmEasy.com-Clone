@@ -18,7 +18,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Carousel() {
+export default function Carousel({ cards }) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState(0);
@@ -29,12 +29,12 @@ export default function Carousel() {
   const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   // These are the images used in the slide
-  const cards = [
-    "https://cdn01.pharmeasy.in/dam/banner/banner/760565c68b5-VIBES27.jpg",
-    "https://cdn01.pharmeasy.in/dam/banner/banner/048facc8065-634x274a.jpg",
-    "https://cdn01.pharmeasy.in/dam/banner/banner/b31ed8123b6-CP.jpg",
-    "https://cdn01.pharmeasy.in/dam/banner/banner/1ef60ed33e9-VicksWinterBannerfinal.jpg",
-  ];
+  // const cards = [
+  //   "https://cdn01.pharmeasy.in/dam/banner/banner/760565c68b5-VIBES27.jpg",
+  //   "https://cdn01.pharmeasy.in/dam/banner/banner/048facc8065-634x274a.jpg",
+  //   "https://cdn01.pharmeasy.in/dam/banner/banner/b31ed8123b6-CP.jpg",
+  //   "https://cdn01.pharmeasy.in/dam/banner/banner/1ef60ed33e9-VicksWinterBannerfinal.jpg",
+  // ];
 
   return (
     <Box

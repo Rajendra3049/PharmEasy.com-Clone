@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Input,
   InputGroup,
@@ -22,10 +23,12 @@ import Carousel from "../MiniComponents/Carousel";
 import Offer from "../MiniComponents/Offer";
 import Category from "../MiniComponents/Category";
 import Launches from "../MiniComponents/Launches";
-import CustomerReview from "./CustomerReview";
+import CustomerReview from "../Components/CustomerReview";
 
 // import CSS
 import content from "../Styles/Contentstyle.module.css";
+// import data
+import { cards } from "../Data";
 
 // store data
 const PaymentOffers = [
@@ -269,10 +272,13 @@ export default function Content() {
             <p>UPTO 70% OFF</p>
           </div>
           <div>
-            <img
-              src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0"
-              alt="3"
-            />
+            <Link to="/healthcare">
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0"
+                alt="3"
+              />
+            </Link>
+
             <p>Healthcare</p>
             <p>UPTO 60% OFF</p>
           </div>
@@ -321,7 +327,7 @@ export default function Content() {
 
       <hr style={{ marginTop: "20px" }} />
       {/* carousel */}
-      <Carousel />
+      <Carousel cards={cards} />
       <hr style={{ marginTop: "20px" }} />
 
       <div id="LabTest_box">

@@ -1,16 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
 import DrawerExample from "./Components/drawer";
-import NavigationBar from "./Components/NavigationBar";
-import Footer from "./Components/Footer";
-import Content from "./Components/Content";
+import NavigationBar from "./Pages/NavigationBar";
+import Footer from "./Pages/Footer";
+import Content from "./Pages/Content";
+import HealthCare from "./Pages/HealthCare";
+import AllRoutes from "./Pages/AllRoutes";
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
       <hr />
-      <Content />
+      <AllRoutes />
       <hr />
       <Footer />
     </div>

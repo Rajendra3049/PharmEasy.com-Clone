@@ -20,7 +20,8 @@
   display: flex;
   height: 35px;
   width: 120px;
-  border: px solid blue;
+  border: 0px solid blue;
+  padding-left: 15px;
 }
 .downloadApp {
   display: flex;

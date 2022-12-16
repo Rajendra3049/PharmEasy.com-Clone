@@ -21,6 +21,7 @@ import {
   AddIcon,
   Image,
   HStack,
+  background,
 } from "@chakra-ui/react";
 import { PinInput, PinInputField } from "@chakra-ui/react";
 import { RiArrowDownSLine, RiPinDistanceLine } from "react-icons/ri";
@@ -29,10 +30,32 @@ import { FcPlus } from "react-icons/fc";
 import { GiScooter } from "react-icons/gi";
 import { BsPerson, BsCart2 } from "react-icons/bs";
 
-export default function LoginDrawer() {
+// import AuthContext
+import { AuthContext } from "../Context/AuthContext";
+
+export default function LoginDrawer({ phoneNo, setPhoneNo }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
-  const [otp, setOtp] = React.useState(false);
+  const [otpState, setOtpState] = React.useState(false);
+  const [otpNumber, setOtpNumber] = React.useState("");
+  // const [OTP, setOTP] = React.useState("");
+
+  const { auth, setAuth, Login, Logout } = React.useContext(AuthContext);
+
+  function OtpGenerator() {
+    let num = "1234567890";
+    let OTP = otpNumber;
+    for (let i = 0; i < 4; i++) {
+      OTP += num[Math.floor(Math.random() * 10)];
+    }
+    setOtpNumber(OTP);
+    setOtpState(true);
+  }
+
+  // console.log(otpNumber);
+  // function ResendOtp() {
+  //   setOtpNumber("");
+  // }
   return (
     <>
       <Button colorScheme="white" onClick={onOpen}>
@@ -47,35 +70,52 @@ export default function LoginDrawer() {
         isOpen={isOpen}
         placement="right"
         initialFocusRef={firstField}
-        onClose={onClose}>
+        onClose={onClose}
+        size="md">
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px">
             <Image src="/images/MediCare.png" alt="logo" />
           </DrawerHeader>
-          {otp ? (
+          {otpState ? (
             ""
           ) : (
             <DrawerBody>
               <Stack spacing="24px">
                 <Box>
                   <FormLabel>Quick Login / Register</FormLabel>
-                  <Input
-                    borderRadius={"0px"}
-                    height="38px"
-                    placeholder="Enter Your Phone Number"
-                  />
+                  <InputGroup>
+                    <InputLeftAddon children="+91" />
+                    <Input
+                      type="number"
+                      borderRadius={"0px"}
+                      height="38px"
+                      placeholder="Enter Your Phone Number"
+                      value={phoneNo}
+                      onChange={(e) => setPhoneNo(e.target.value)}
+                      maxLength={10}
+                      style={{ marginTop: "2px" }}
+                    />
+                  </InputGroup>
                 </Box>
-                <Button onClick={() => setOtp(true)}>Send OTP</Button>
+                <Button
+                  onClick={OtpGenerator}
+                  style={{ backgroundColor: "#10847e", color: "white" }}>
+                  Send OTP
+                </Button>
               </Stack>
             </DrawerBody>
           )}
-          {otp ? (
+          {otpState ? (
             <DrawerBody>
               <Stack spacing="24px">
                 <Box>
-                  <FormLabel>Enter OTP sent to +91 8359833649</FormLabel>
+                  Your OTP is{" "}
+                  <span style={{ color: "orangered" }}>{otpNumber}</span>
+                </Box>
+                <Box>
+                  <FormLabel>Enter OTP sent to +91 {phoneNo}</FormLabel>
                   <HStack>
                     <PinInput>
                       <PinInputField />
@@ -85,11 +125,32 @@ export default function LoginDrawer() {
                     </PinInput>
                   </HStack>
                 </Box>
-                <Box>
-                  <Button>Change Number</Button>
-                  <Button>Resend</Button>
+
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    textAlign: "left",
+                    border: "0px solid red",
+                    width: "75%",
+                    color: "#10847e",
+                  }}>
+                  <Button
+                    style={{ fontSize: "12px", background: "none" }}
+                    onClick={() => setOtpState(false)}>
+                    Change Number
+                  </Button>
+                  {/* <Button
+                    style={{ fontSize: "12px", background: "none" }}
+                    onClick={ResendOtp}>
+                    Resend OTP
+                  </Button> */}
                 </Box>
-                <Button>Continue</Button>
+                <Button
+                  style={{ backgroundColor: "#10847e", color: "white" }}
+                  onClick={Login}>
+                  Continue
+                </Button>
               </Stack>
             </DrawerBody>
           ) : (
