@@ -123,7 +123,7 @@
   margin-bottom: 10px;
 }
 .rightBottomCartValue div {
-  border: px solid red;
+  border: 0px solid red;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
