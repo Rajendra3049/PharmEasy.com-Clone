@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1670824840.jpg",
+      "price": 207
+    },
+    {
+      "id": 2,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1656420891.jpg",
+      "price": 174
+    },
+    {
+      "id": 3,
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J51815/liveasy-wellness-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1654165611.jpg",
+      "price": 324
+    },
+    {
+      "id": 4,
+      "title": "Wellbeing Nutrition Acv Effervescent For Weight Loss & Fat Burn 17 Tabs (Pack Of 1)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/L97324/wellbeing-nutrition-apple-cider-vinegar-with-garcinia-cambogia-17-tablets-2-1645441014.jpg",
+      "price": 296
+    },
+    {
+      "id": 5,
+      "title": "Liveasy Wellness Diabetic Protein - Blood Sugar & Weight Management -French Vanilla 400g Jar",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/E07034/liveasy-wellness-diabetic-protein-blood-sugar-weight-management-french-vanilla-400g-jar-2-1654169670.jpg",
+      "price": 296
+    },
+    {
+      "id": 6,
+      "title": "Liveasy Wellness Diabetic Protein - Blood Sugar & Weight Management -French Vanilla 400g Jar",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/T69121/kapiva-himalayan-apple-cider-vinegar-with-mother-vinegar-500ml-unpasteurized-and-undiluted-2-1666867490.jpg",
+      "price": 335
+    },
+    {
+      "id": 7,
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/289691/pentasure-hp-banana-vanilla-whey-protein-tin-of-400-g-2-1669635090.jpg",
+      "price": 324
+    },
+    {
+      "id": 8,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J16474/wow-life-science-organic-apple-cider-vinegar-750-ml-2-1658484187.jpg",
+      "price": 100
+    },
+    {
+      "id": 9,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I48002/himalaya-wellness-pure-herbs-vrikshamla-weight-management-tablet-bottle-of-60-2-1669711328.jpg",
+      "price": 99
+    },
+    {
+      "id": 10,
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/C62500/patanjali-nutrela-weight-gain-soya-whey-protein-1-jar-500g-2-1649248410.jpg",
+      "price": 520
+    },
+    {
+      "id": 11,
+      "title": "Liveasy Wellness Diabetic Protein - Blood Sugar & Weight Management -French Vanilla 400g Jar",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/090305/himalaya-wellness-ayurslim-weight-management-capsules-bottle-of-60-2-1669635046.jpg",
+      "price": 230
+    },
+    {
+      "id": 12,
+      "title": "Wellbeing Nutrition Matcha Green Tea With Antioxidants For Stress Relief, Detox And Energy 20 Tabs (Pack Of 2)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J48215/wellbeing-nutrition-organic-japanese-ceremonial-matcha-green-tea-40-tablets-2-1645441124.jpg",
+      "price": 499
+    },
+    {
+      "id": 13,
+      "title": "Actifiber Natural Weight Control - 240 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/B55743/actifiber-natural-weight-control-240-g-1-1654077538.jpg",
+      "price": 800
+    },
+    {
+      "id": 14,
+      "title": "Liveasy Wellness Diabetic Protein - Blood Sugar & Weight Management -French Vanilla 400g Jar",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/O18089/liveasy-wellness-diabetic-protein-powder-french-vanilla-flavour-1000g-2-1650541160.jpg",
+      "price": 150
+    }
+  ],
+  "cart": [
+    {
+      "id": 8,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J16474/wow-life-science-organic-apple-cider-vinegar-750-ml-2-1658484187.jpg",
+      "price": 100
+    },
+    {
+      "id": 9,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I48002/himalaya-wellness-pure-herbs-vrikshamla-weight-management-tablet-bottle-of-60-2-1669711328.jpg",
+      "price": 99
+    }
+  ]
+}
