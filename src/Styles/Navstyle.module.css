@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: px solid blue;
+  border: 0px solid blue;
 }
 
 .pinBtn {
@@ -14,7 +14,7 @@
   width: 80%;
 }
 .navAppBox {
-  border: px solid red;
+  border: 0px solid red;
 }
 .navApp {
   display: flex;
@@ -43,7 +43,7 @@
 }
 /* Login button */
 .login {
-  border: px solid red;
+  border: 0px solid red;
   margin-top: -5px;
 }
 .login:hover {
