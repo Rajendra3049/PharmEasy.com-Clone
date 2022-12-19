@@ -1,7 +1,7 @@
 .category {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: px solid red;
+  border: 0px solid red;
   gap: 15px;
 }
 
@@ -17,19 +17,19 @@
   box-shadow: rgba(61, 155, 121, 0.76) 0px 0px 0px 3px;
 }
 .category > div > div:nth-child(1) {
-  border: px solid green;
+  border: 0px solid green;
   width: 25%;
 }
 .category > div > div:nth-child(1) img {
   width: 80%;
 }
 .category > div > div:nth-child(2) {
-  border: px solid rgb(194, 4, 181);
+  border: 0px solid rgb(194, 4, 181);
   align-items: center;
   width: 30%;
 }
 .category > div > div:nth-child(3) {
-  border: px solid rgb(22, 234, 135);
+  border: 0px solid rgb(22, 234, 135);
   color: green;
   align-items: center;
 }

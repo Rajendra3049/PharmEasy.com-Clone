@@ -1,5 +1,5 @@
 .main {
-  border: px solid red;
+  border: 0px solid red;
   display: flex;
   width: 80%;
   justify-content: space-between;
@@ -47,24 +47,24 @@
   padding: 10px;
 }
 .leftBottom > div:nth-child(1) {
-  border: px solid rgb(112, 213, 216);
+  border: 0px solid rgb(112, 213, 216);
   width: 25%;
   height: 140px;
   padding-top: 30px;
 }
 .leftBottom > div:nth-child(1) img {
-  border: px solid red;
+  border: 0px solid red;
   width: 50%;
   height: 80%;
   margin: auto;
 }
 .leftBottom > div:nth-child(2) {
-  border: px solid rgb(213, 236, 7);
+  border: 0px solid rgb(213, 236, 7);
   width: 50%;
 }
 
 .leftBottomPrice {
-  border: px solid red;
+  border: 0px solid red;
   margin-top: 20px;
   color: orangered;
 }
@@ -74,7 +74,7 @@
   margin-top: 10px;
 }
 .leftBottom > div:nth-child(3) {
-  border: px solid rgb(240, 7, 232);
+  border: 0px solid rgb(240, 7, 232);
   width: 20%;
   display: grid;
   text-align: center;
@@ -84,14 +84,14 @@
   width: 70%;
 }
 .delete {
-  border: px solid red;
+  border: 0px solid red;
   width: 80%;
   text-align: right;
 }
 
 /* right side */
 .right {
-  border: px solid rgb(255, 200, 0);
+  border: 0px solid rgb(255, 200, 0);
   width: 33%;
   padding: 5px;
 }
@@ -117,7 +117,7 @@
   padding: 15px;
 }
 .rightBottomHeading > h1 {
-  border: px solid rgb(25, 83, 201);
+  border: 0px solid rgb(25, 83, 201);
   font-size: 20px;
   font-weight: 550;
   margin-bottom: 10px;
@@ -130,7 +130,7 @@
   color: gray;
 }
 .rightBottomAmount {
-  border: px solid red;
+  border: 0px solid red;
   font-size: 18px;
   font-weight: 550;
   margin-top: 10px;
