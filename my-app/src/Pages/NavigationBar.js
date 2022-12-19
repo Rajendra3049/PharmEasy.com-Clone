@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { NavLink } from "react-router-dom";
 
 import {
   Box,
@@ -17,6 +18,7 @@ import {
   useColorModeValue,
   Stack,
   Image,
+  Text,
 } from "@chakra-ui/react";
 // import icon
 import { HamburgerIcon, CloseIcon, AddIcon } from "@chakra-ui/icons";
@@ -28,22 +30,10 @@ import DrawerExample from "../Components/drawer";
 import LoginDrawer from "../Components/LoginDrawer";
 import NavStyle from "../Styles/Navstyle.module.css";
 import LogOutMenu from "../Components/LogOutMenu";
+import Cart from "./Cart";
 import { AuthContext } from "../Context/AuthContext";
 
 const Links = ["Download App", "Hello,Login", "Offers", "Cart"];
-
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-    }}
-    href={"#"}>
-    {children}
-  </Link>
-);
 
 export default function NavigationBar() {
   const [phoneNo, setPhoneNo] = React.useState("");
@@ -68,11 +58,13 @@ export default function NavigationBar() {
             <Box style={{ display: "flex" }}>
               <Box className={NavStyle.pinBtn}>
                 {" "}
-                <Image
-                  className={NavStyle.logoImg}
-                  src="/images/MediCare.png"
-                  alt="logo"
-                />{" "}
+                <NavLink to="/">
+                  <Image
+                    className={NavStyle.logoImg}
+                    src="/images/MediCare.png"
+                    alt="logo"
+                  />
+                </NavLink>{" "}
               </Box>
               <Box style={{ marginTop: "10px" }}>
                 {/* pin code drawer */}
@@ -111,10 +103,16 @@ export default function NavigationBar() {
                   <Box className={NavStyle.navHeading}> Offers</Box>
                 </Box>
               </NavLink>
-              <NavLink>
+
+              <NavLink to="/cart">
                 <Box className={NavStyle.navApp}>
                   <BsCart2 size={"22px"} />
-                  <Box className={NavStyle.navHeading}>Cart</Box>
+
+                  {/* cart invoke */}
+
+                  <Box className={NavStyle.navHeading}>
+                    <Text>Cart</Text>
+                  </Box>
                 </Box>
               </NavLink>
             </HStack>

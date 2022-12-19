@@ -4,6 +4,7 @@
   border: px solid red;
   gap: 15px;
 }
+
 .category > div {
   border: 1px solid gainsboro;
   display: flex;

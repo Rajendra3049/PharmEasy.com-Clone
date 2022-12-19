@@ -1,0 +1,134 @@
+.main {
+  border: px solid red;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.left {
+  border: px solid rgb(25, 231, 36);
+}
+.left h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.left1 {
+  border: px solid rgb(5, 65, 205);
+  display: flex;
+  justify-content: space-around;
+}
+.left1 > div:nth-child(1) {
+  border: px solid rgb(233, 112, 7);
+  width: 15%;
+}
+.left1 img {
+  width: 80%;
+  margin-top: 20px;
+  padding: 5px;
+}
+.left1 > div:nth-child(2) {
+  border: px solid rgba(64, 210, 6, 0.68);
+  width: 80%;
+}
+.left1 > div:nth-child(3) {
+  border: px solid rgb(7, 199, 233);
+  width: 15%;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.left2 {
+  border: px solid rgb(5, 65, 205);
+  display: flex;
+}
+.left2 img {
+  width: 80%;
+  padding: 15px;
+}
+.left2 > div:nth-child(1) {
+  border: px solid rgb(233, 112, 7);
+  width: 15%;
+}
+
+.left2 > div:nth-child(2) {
+  border: px solid rgba(64, 210, 6, 0.68);
+  width: 80%;
+}
+.left2 > div:nth-child(3) {
+  border: px solid rgb(7, 199, 233);
+  width: 15%;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.left3 {
+  border: px solid rgb(5, 65, 205);
+  display: flex;
+}
+.left3 img {
+  width: 80%;
+  padding: 15px;
+}
+.left3 > div:nth-child(1) {
+  border: px solid rgb(233, 112, 7);
+  width: 15%;
+}
+
+.left3 > div:nth-child(2) {
+  border: px solid rgba(64, 210, 6, 0.68);
+  width: 80%;
+}
+.left3 > div:nth-child(3) {
+  border: px solid rgb(7, 199, 233);
+  width: 15%;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.right {
+  border: px solid red;
+  width: 38%;
+  padding: 10px;
+  padding-right: 25px;
+}
+.right1 {
+  border: px solid rgb(7, 199, 233);
+  font-size: 17px;
+  color: gray;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.right2 {
+  border: px solid rgb(233, 75, 7);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.right3 {
+  border: px solid rgb(7, 37, 226);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.right4 {
+  border: px solid rgb(215, 243, 7);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.saving {
+  border: 1px dashed #11c042;
+  background-color: #f2fff8;
+  color: #11c042;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* .placeOrder Button {
+  width: 700px;
+} */

@@ -18,12 +18,14 @@ function LogOutMenu({ phoneNo }) {
       <MenuButton
         style={{
           border: "0px solid black",
-          width: "170px",
-          marginTop: "5px",
-          marginLeft: "-35px",
+          width: "150px",
+          marginTop: "2px",
+          marginLeft: "-20px",
           backgroundColor: "#eef4ff",
           borderRadius: "10px",
-          height: "35px",
+          height: "38px",
+
+          fontSize: "15px",
         }}>
         User +91 <span>{phoneNo}</span>
       </MenuButton>

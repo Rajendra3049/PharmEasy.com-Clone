@@ -6,13 +6,9 @@ import {
   InputLeftElement,
   InputRightElement,
   Table,
-  Thead,
   Tbody,
-  Tfoot,
   Tr,
-  Th,
   Td,
-  TableCaption,
   TableContainer,
 } from "@chakra-ui/react";
 // import ICON
@@ -228,7 +224,7 @@ export default function Content() {
     <div className={content.mainBox}>
       <div id="search_box">
         <div style={{ marginTop: "50px" }}>
-          <h1 style={{ fontSize: "30px" }}>
+          <h1 style={{ fontSize: "30px", marginLeft: "30%" }}>
             <b>What are you looking for?</b>
           </h1>
 

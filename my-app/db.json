@@ -84,5 +84,19 @@
       "img": "https://cdn01.pharmeasy.in/dam/products_otc/O18089/liveasy-wellness-diabetic-protein-powder-french-vanilla-flavour-1000g-2-1650541160.jpg",
       "price": 150
     }
+  ],
+  "cart": [
+    {
+      "id": 8,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J16474/wow-life-science-organic-apple-cider-vinegar-750-ml-2-1658484187.jpg",
+      "price": 100
+    },
+    {
+      "id": 9,
+      "title": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I48002/himalaya-wellness-pure-herbs-vrikshamla-weight-management-tablet-bottle-of-60-2-1669711328.jpg",
+      "price": 99
+    }
   ]
 }

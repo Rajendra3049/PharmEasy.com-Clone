@@ -52,17 +52,18 @@ export default function LoginDrawer({ phoneNo, setPhoneNo }) {
     setOtpState(true);
   }
 
-  // console.log(otpNumber);
-  // function ResendOtp() {
-  //   setOtpNumber("");
-  // }
   return (
     <>
       <Button colorScheme="white" onClick={onOpen}>
         <Box>
-          <Box style={{ color: "black", display: "flex", fontWeight: "400" }}>
-            <BsPerson size={"22px"} />
-            <p style={{ marginLeft: "5px" }}>Hello,Login</p>
+          <Box
+            style={{
+              color: "black",
+              display: "flex",
+              fontWeight: "400",
+            }}>
+            <BsPerson size={"20px"} />
+            <p style={{ marginLeft: "3px" }}>Hello,Login</p>
           </Box>
         </Box>
       </Button>
@@ -101,7 +102,8 @@ export default function LoginDrawer({ phoneNo, setPhoneNo }) {
                 </Box>
                 <Button
                   onClick={OtpGenerator}
-                  style={{ backgroundColor: "#10847e", color: "white" }}>
+                  style={{ backgroundColor: "#10847e", color: "white" }}
+                  isDisabled={phoneNo.length < 10}>
                   Send OTP
                 </Button>
               </Stack>
@@ -137,14 +139,12 @@ export default function LoginDrawer({ phoneNo, setPhoneNo }) {
                   }}>
                   <Button
                     style={{ fontSize: "12px", background: "none" }}
-                    onClick={() => setOtpState(false)}>
+                    onClick={() => {
+                      setOtpState(false);
+                      setOtpNumber("");
+                    }}>
                     Change Number
                   </Button>
-                  {/* <Button
-                    style={{ fontSize: "12px", background: "none" }}
-                    onClick={ResendOtp}>
-                    Resend OTP
-                  </Button> */}
                 </Box>
                 <Button
                   style={{ backgroundColor: "#10847e", color: "white" }}

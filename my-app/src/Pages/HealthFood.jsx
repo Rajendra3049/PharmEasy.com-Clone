@@ -21,7 +21,7 @@ function HealthFood() {
   React.useEffect(() => {
     GetData();
   }, [sort]);
-  console.log(data);
+  // console.log(data);
   return (
     <div style={{ width: "65%", margin: "auto" }}>
       <div id="filter boxes" className={foodStyles.filter}>
@@ -41,7 +41,13 @@ function HealthFood() {
       </div>
       <div id="append all data" className={foodStyles.products}>
         {data.map((e) => (
-          <ITP key={e.id} img={e.img} title={e.title} price={e.price} />
+          <ITP
+            key={e.id}
+            id={e.id}
+            img={e.img}
+            title={e.title}
+            price={e.price}
+          />
         ))}
       </div>
     </div>
