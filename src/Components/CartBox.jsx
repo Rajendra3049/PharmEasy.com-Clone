@@ -7,12 +7,15 @@ function CartBox({ title, price, img, id, GetData }) {
   async function PostData() {
     // console.log(id);
     try {
-      let res = await fetch(`http://localhost:3000/cart/${id}`, {
-        method: "Delete",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let res = await fetch(
+        `https://medic-care-database.glitch.me/cart/${id}`,
+        {
+          method: "Delete",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       res = await res.json();
       console.log(res);
     } catch (error) {

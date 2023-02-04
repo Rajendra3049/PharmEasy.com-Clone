@@ -14,7 +14,7 @@ function Cart() {
 
   async function GetData() {
     try {
-      let res = await fetch(`http://localhost:3000/cart`);
+      let res = await fetch(`https://medic-care-database.glitch.me/cart`);
       res = await res.json();
       setCartData(res);
     } catch (error) {

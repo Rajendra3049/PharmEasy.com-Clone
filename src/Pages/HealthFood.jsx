@@ -10,7 +10,7 @@ function HealthFood() {
   async function GetData() {
     try {
       let res = await fetch(
-        `http://localhost:3000/data?_sort=price&_order=${sort}`
+        `https://medic-care-database.glitch.me/data?_sort=price&_order=${sort}`
       );
       res = await res.json();
       setData(res);

@@ -33,7 +33,7 @@ export default function ProductDetails() {
   const [data, setData] = React.useState({});
   async function GetData() {
     try {
-      let res = await fetch(`http://localhost:3000/data/${id}`);
+      let res = await fetch(`https://medic-care-database.glitch.me/data/${id}`);
       res = await res.json();
       setData(res);
     } catch (error) {
@@ -47,7 +47,7 @@ export default function ProductDetails() {
   async function PostData(e) {
     e.preventDefault();
     try {
-      let res = await fetch(`http://localhost:3000/cart`, {
+      let res = await fetch(`https://medic-care-database.glitch.me/cart`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
